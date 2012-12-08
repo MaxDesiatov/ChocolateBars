@@ -7,12 +7,19 @@
 //
 
 #import "MDAppDelegate.h"
+#import "MDCocoaPod.h"
 
 @implementation MDAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    NSLog(@"invoked");
+    MDCocoaPod *newPod = [MDCocoaPod new];
+    newPod.name = @"it works!";
+    newPod.version = @"yes it does!";
+    _cocoaPods = [NSMutableArray new];
+    [_arrayController addObject:newPod];
+    [_tableView reloadData];
 }
 
 @end

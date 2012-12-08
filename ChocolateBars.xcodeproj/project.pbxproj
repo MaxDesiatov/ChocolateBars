@@ -17,6 +17,7 @@
 		E27E1C391673E0D20051B340 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27E1C191673E0D20051B340 /* Cocoa.framework */; };
 		E27E1C411673E0D20051B340 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E27E1C3F1673E0D20051B340 /* InfoPlist.strings */; };
 		E27E1C441673E0D20051B340 /* ChocolateBarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E1C431673E0D20051B340 /* ChocolateBarsTests.m */; };
+		E27E1C611673F2230051B340 /* MDCocoaPod.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E1C601673F2230051B340 /* MDCocoaPod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		E27E1C401673E0D20051B340 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E27E1C421673E0D20051B340 /* ChocolateBarsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChocolateBarsTests.h; sourceTree = "<group>"; };
 		E27E1C431673E0D20051B340 /* ChocolateBarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChocolateBarsTests.m; sourceTree = "<group>"; };
+		E27E1C5F1673F2230051B340 /* MDCocoaPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCocoaPod.h; sourceTree = "<group>"; };
+		E27E1C601673F2230051B340 /* MDCocoaPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCocoaPod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				E27E1C2B1673E0D20051B340 /* MDAppDelegate.h */,
 				E27E1C2C1673E0D20051B340 /* MDAppDelegate.m */,
 				E27E1C2E1673E0D20051B340 /* MainMenu.xib */,
+				E27E1C5F1673F2230051B340 /* MDCocoaPod.h */,
+				E27E1C601673F2230051B340 /* MDCocoaPod.m */,
 				E27E1C201673E0D20051B340 /* Supporting Files */,
 			);
 			path = ChocolateBars;
@@ -264,6 +269,7 @@
 			files = (
 				E27E1C261673E0D20051B340 /* main.m in Sources */,
 				E27E1C2D1673E0D20051B340 /* MDAppDelegate.m in Sources */,
+				E27E1C611673F2230051B340 /* MDCocoaPod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +453,7 @@
 				E27E1C491673E0D20051B340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E27E1C4A1673E0D20051B340 /* Build configuration list for PBXNativeTarget "ChocolateBarsTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +462,7 @@
 				E27E1C4C1673E0D20051B340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

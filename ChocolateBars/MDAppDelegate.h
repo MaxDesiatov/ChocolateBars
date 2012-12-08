@@ -10,6 +10,10 @@
 
 @interface MDAppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak) IBOutlet NSArrayController *arrayController;
+@property (weak) IBOutlet NSTableView *tableView;
+
 @property (assign) IBOutlet NSWindow *window;
+@property (readwrite, copy) NSMutableArray *cocoaPods;
 
 @end
