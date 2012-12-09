@@ -12,5 +12,6 @@
 
 @property (readwrite, copy) NSString *name;
 @property (readwrite, copy) NSString *version;
+@property (readwrite, copy) NSData *podFile;
 
 @end
