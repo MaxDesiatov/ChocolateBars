@@ -77,7 +77,7 @@
     NSString *indicatorText = predicate ?
         [NSString stringWithFormat:@"%ld of %ld pods", [_tableView numberOfRows],
          _podsTotalCount] :
-    [NSString stringWithFormat:@"%ld pods", _podsTotalCount];
+        [NSString stringWithFormat:@"%ld pods", _podsTotalCount];
     [_countIndicator setStringValue:indicatorText];
 }
 
