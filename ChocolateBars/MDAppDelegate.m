@@ -46,9 +46,8 @@
     [arr enumerateObjectsUsingBlock:^(NSURL *url, NSUInteger idx, BOOL *stop)
     {
         MDCocoaPod *newPod = [MDCocoaPod new];
-        newPod.name = [url lastPathComponent];
         newPod.version = @"yes it does!";
-        newPod.podFile = [NSData dataWithContentsOfURL:url];
+        newPod.podFileURL = url;
         [_arrayController addObject:newPod];
         _podsTotalCount++;
     }];

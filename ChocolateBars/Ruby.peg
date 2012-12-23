@@ -1,0 +1,78 @@
+@property (strong) MDRubyInterpreter *interpreter;
+
+Ruby <- _ Code EndOfFile
+
+Code <- Expression / (Expression EndOfExpression)*
+
+EndOfExpression <- '\n' / ';'
+
+Expression <- String / Hash / Array / Symbol / Assignment / Invocation / Arithmetic
+
+Assignment <- Lhs '=' Expression
+
+Lhs <- < SymbolChar+ ('.' SymbolChar+)* >  _ { [self.interpreter pushLhs:text]; }
+
+Invocation <- FunctionName FunctionArguments? _ Block?
+
+FunctionName <- SymbolChar+
+
+FunctionArguments <- OPEN SymbolChar+ (COMMA SymbolChar+)* CLOSE
+
+Block <- 'do' _ BlockArguments _ Code End
+
+BlockArguments <- '|' SymbolChar+ '|'
+
+End <- 'end'
+
+String <- Quote StringChar* Quote _
+
+Quote <- ['] / ["]
+
+StringChar <- '\\' [nrt'"\[\]\\]
+            / '\\' [0-2][0-7][0-7]
+            / '\\' [0-7][0-7]?
+            / '\\x' [0-9a-fA-F][0-9a-fA-F]
+            / !'\\' .
+
+Array <- '[' (Expression / (Expression ',' _)*) ']' _
+
+
+Hash <- '{' (HashItem / (HashItem ',' _)*) '}' _
+
+HashItem <- Expression '=>' _ Expression
+
+Symbol <- ':' SymbolChar+ _
+
+SymbolChar <- .
+
+Arithmetic <- Primary
+
+Primary <- Secondary ( PLUS  Secondary { [self.interpreter add]; }
+                     / MINUS Secondary { [self.interpreter subtract]; }
+                     )*
+
+Secondary <- Tertiary ( MUL Tertiary { [self.interpreter multiply]; }
+                      / DIV Tertiary { [self.interpreter divide];   }
+                      )*
+
+Tertiary <- Terminal EXP Tertiary { [self.interpreter exponent]; }
+          / (PLUS / MINUS { [self.interpreter negative]; })+ Tertiary
+          / Terminal
+
+Terminal <- OPEN Primary CLOSE
+          / Number { [self.interpreter pushNumber:text]; }
+
+Number <- < [\x30-\x39]+ > _
+
+OPEN      <- '(' _
+CLOSE     <- ')' _
+COMMA     <- ',' _
+
+EXP       <- '**' _
+MUL       <- '*' _
+DIV       <- '/' _
+PLUS      <- '+' _
+MINUS     <- '-' _
+_         <- [ \n\t]*
+__ <- ' '+
+EndOfFile <- !.

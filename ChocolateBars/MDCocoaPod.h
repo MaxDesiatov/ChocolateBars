@@ -10,8 +10,9 @@
 
 @interface MDCocoaPod : NSObject
 
-@property (readwrite, copy) NSString *name;
+@property (readonly) NSString *name;
 @property (readwrite, copy) NSString *version;
-@property (readwrite, retain) NSData *podFile;
+@property (readwrite, copy) NSURL *podFileURL;
+@property (readonly) NSData *podFileContents;
 
 @end

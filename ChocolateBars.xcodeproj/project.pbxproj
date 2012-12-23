@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19053A1255CE4B259DAAE985 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B702D66DD64B39950F7C95 /* libPods.a */; };
+		E21602FB1687904600598476 /* Ruby.m in Sources */ = {isa = PBXBuildFile; fileRef = E21602FA1687904600598476 /* Ruby.m */; };
 		E27E1C1A1673E0D20051B340 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27E1C191673E0D20051B340 /* Cocoa.framework */; };
 		E27E1C241673E0D20051B340 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E27E1C221673E0D20051B340 /* InfoPlist.strings */; };
 		E27E1C261673E0D20051B340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E1C251673E0D20051B340 /* main.m */; };
@@ -19,6 +21,8 @@
 		E27E1C441673E0D20051B340 /* ChocolateBarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E1C431673E0D20051B340 /* ChocolateBarsTests.m */; };
 		E27E1C611673F2230051B340 /* MDCocoaPod.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E1C601673F2230051B340 /* MDCocoaPod.m */; };
 		E27E1C651674AB740051B340 /* NSDirectoryEnumerator+MDFunctional.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E1C641674AB740051B340 /* NSDirectoryEnumerator+MDFunctional.m */; };
+		E2B50C2916875C0800468684 /* Ruby.peg in Resources */ = {isa = PBXBuildFile; fileRef = E2B50C2816875C0800468684 /* Ruby.peg */; };
+		E2B50C2C168775C600468684 /* MDRubyInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B50C2B168775C600468684 /* MDRubyInterpreter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73B702D66DD64B39950F7C95 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC00932A1914765934AA3A2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AA857C465949629C98CD20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E21602F91687904600598476 /* Ruby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ruby.h; sourceTree = "<group>"; };
+		E21602FA1687904600598476 /* Ruby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ruby.m; sourceTree = "<group>"; };
 		E27E1C151673E0D20051B340 /* ChocolateBars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChocolateBars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27E1C191673E0D20051B340 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E27E1C1C1673E0D20051B340 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -55,6 +64,9 @@
 		E27E1C601673F2230051B340 /* MDCocoaPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCocoaPod.m; sourceTree = "<group>"; };
 		E27E1C631674AB730051B340 /* NSDirectoryEnumerator+MDFunctional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDirectoryEnumerator+MDFunctional.h"; sourceTree = "<group>"; };
 		E27E1C641674AB740051B340 /* NSDirectoryEnumerator+MDFunctional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDirectoryEnumerator+MDFunctional.m"; sourceTree = "<group>"; };
+		E2B50C2816875C0800468684 /* Ruby.peg */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = Ruby.peg; sourceTree = "<group>"; };
+		E2B50C2A168775C600468684 /* MDRubyInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRubyInterpreter.h; sourceTree = "<group>"; };
+		E2B50C2B168775C600468684 /* MDRubyInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRubyInterpreter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27E1C1A1673E0D20051B340 /* Cocoa.framework in Frameworks */,
+				19053A1255CE4B259DAAE985 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 				E27E1C3C1673E0D20051B340 /* ChocolateBarsTests */,
 				E27E1C181673E0D20051B340 /* Frameworks */,
 				E27E1C161673E0D20051B340 /* Products */,
+				96AA857C465949629C98CD20 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +117,8 @@
 				E27E1C191673E0D20051B340 /* Cocoa.framework */,
 				E27E1C371673E0D20051B340 /* SenTestingKit.framework */,
 				E27E1C1B1673E0D20051B340 /* Other Frameworks */,
+				7DC00932A1914765934AA3A2 /* libPods.a */,
+				73B702D66DD64B39950F7C95 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +136,10 @@
 		E27E1C1F1673E0D20051B340 /* ChocolateBars */ = {
 			isa = PBXGroup;
 			children = (
+				E21602F91687904600598476 /* Ruby.h */,
+				E21602FA1687904600598476 /* Ruby.m */,
+				E2B50C2A168775C600468684 /* MDRubyInterpreter.h */,
+				E2B50C2B168775C600468684 /* MDRubyInterpreter.m */,
 				E27E1C2B1673E0D20051B340 /* MDAppDelegate.h */,
 				E27E1C2C1673E0D20051B340 /* MDAppDelegate.m */,
 				E27E1C631674AB730051B340 /* NSDirectoryEnumerator+MDFunctional.h */,
@@ -127,6 +147,7 @@
 				E27E1C2E1673E0D20051B340 /* MainMenu.xib */,
 				E27E1C5F1673F2230051B340 /* MDCocoaPod.h */,
 				E27E1C601673F2230051B340 /* MDCocoaPod.m */,
+				E2B50C2816875C0800468684 /* Ruby.peg */,
 				E27E1C201673E0D20051B340 /* Supporting Files */,
 			);
 			path = ChocolateBars;
@@ -173,6 +194,7 @@
 				E27E1C111673E0D20051B340 /* Sources */,
 				E27E1C121673E0D20051B340 /* Frameworks */,
 				E27E1C131673E0D20051B340 /* Resources */,
+				F1EB78076B90446AB9F38642 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +260,7 @@
 				E27E1C241673E0D20051B340 /* InfoPlist.strings in Resources */,
 				E27E1C2A1673E0D20051B340 /* Credits.rtf in Resources */,
 				E27E1C301673E0D20051B340 /* MainMenu.xib in Resources */,
+				E2B50C2916875C0800468684 /* Ruby.peg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +288,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		F1EB78076B90446AB9F38642 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,6 +313,8 @@
 				E27E1C2D1673E0D20051B340 /* MDAppDelegate.m in Sources */,
 				E27E1C611673F2230051B340 /* MDCocoaPod.m in Sources */,
 				E27E1C651674AB740051B340 /* NSDirectoryEnumerator+MDFunctional.m in Sources */,
+				E2B50C2C168775C600468684 /* MDRubyInterpreter.m in Sources */,
+				E21602FB1687904600598476 /* Ruby.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

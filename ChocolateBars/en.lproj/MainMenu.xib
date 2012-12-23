@@ -1328,7 +1328,7 @@
 										<object class="NSTextField" id="353037140">
 											<reference key="NSNextResponder" ref="674587603"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{306, 746}, {38, 17}}</string>
+											<string key="NSFrame">{{296, 746}, {48, 17}}</string>
 											<reference key="NSSuperview" ref="674587603"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="992330725"/>
@@ -1337,7 +1337,7 @@
 											<object class="NSTextFieldCell" key="NSCell" id="362643818">
 												<int key="NSCellFlags">68157504</int>
 												<int key="NSCellFlags2">272630784</int>
-												<string key="NSContents">Label</string>
+												<string key="NSContents">0 pods</string>
 												<object class="NSFont" key="NSSupport" id="286321028">
 													<string key="NSName">LucidaGrande</string>
 													<double key="NSSize">13</double>
@@ -1369,7 +1369,7 @@
 										<object class="NSSearchField" id="210973491">
 											<reference key="NSNextResponder" ref="674587603"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{0, 741}, {301, 22}}</string>
+											<string key="NSFrame">{{0, 741}, {291, 22}}</string>
 											<reference key="NSSuperview" ref="674587603"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="353037140"/>
@@ -1508,7 +1508,6 @@
 																	</object>
 																	<int key="NSResizingMask">3</int>
 																	<bool key="NSIsResizeable">YES</bool>
-																	<bool key="NSIsEditable">YES</bool>
 																	<reference key="NSTableView" ref="236851702"/>
 																</object>
 																<object class="NSTableColumn" id="608936713">
@@ -1534,7 +1533,6 @@
 																	</object>
 																	<int key="NSResizingMask">3</int>
 																	<bool key="NSIsResizeable">YES</bool>
-																	<bool key="NSIsEditable">YES</bool>
 																	<reference key="NSTableView" ref="236851702"/>
 																</object>
 															</array>
@@ -1675,7 +1673,7 @@
 															<string key="NSFrameSize">{590, 761}</string>
 															<reference key="NSSuperview" ref="717695696"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="887402603"/>
+															<reference key="NSNextKeyView" ref="1008090934"/>
 															<string key="NSReuseIdentifierKey">_NS:13</string>
 															<object class="NSTextContainer" key="NSTextContainer" id="81904951">
 																<object class="NSLayoutManager" key="NSLayoutManager">
@@ -1917,7 +1915,7 @@ wGw</bytes>
 													<string key="NSFrame">{{1, 746}, {590, 16}}</string>
 													<reference key="NSSuperview" ref="471462258"/>
 													<reference key="NSWindow"/>
-													<reference key="NSNextKeyView" ref="717695696"/>
+													<reference key="NSNextKeyView" ref="887402603"/>
 													<string key="NSReuseIdentifierKey">_NS:33</string>
 													<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 													<int key="NSsFlags">1</int>
@@ -1930,7 +1928,7 @@ wGw</bytes>
 											<string key="NSFrameSize">{592, 763}</string>
 											<reference key="NSSuperview" ref="534913748"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="1008090934"/>
+											<reference key="NSNextKeyView" ref="717695696"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<int key="NSsFlags">133170</int>
 											<reference key="NSVScroller" ref="887402603"/>
@@ -1962,7 +1960,7 @@ wGw</bytes>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="598986510"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1920, 1200}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
@@ -2762,19 +2760,19 @@ wGw</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">data: selection.podFile</string>
+						<string key="label">data: selection.podFileContents</string>
 						<reference key="source" ref="264902438"/>
 						<reference key="destination" ref="131638482"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="264902438"/>
 							<reference key="NSDestination" ref="131638482"/>
-							<string key="NSLabel">data: selection.podFile</string>
+							<string key="NSLabel">data: selection.podFileContents</string>
 							<string key="NSBinding">data</string>
-							<string key="NSKeyPath">selection.podFile</string>
+							<string key="NSKeyPath">selection.podFileContents</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">673</int>
+					<int key="connectionID">718</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4513,7 +4511,7 @@ wGw</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">717</int>
+			<int key="maxID">718</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
